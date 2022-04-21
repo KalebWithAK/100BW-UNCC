@@ -1,0 +1,17 @@
+.container-card {
+    justify-content: space-between;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.card {
+    height: 3em;
+}
+
+.card > img {
+    padding-top: 1em;
+    width: 9em;
+    margin: auto;
+}

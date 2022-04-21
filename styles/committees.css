@@ -1,0 +1,38 @@
+h2 {
+    text-align: center;
+}
+
+.container-card {
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.card, .card:hover {
+    background-color: white;
+    width: 16em;
+    height: 17em;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#health {
+    background-image: url('../images/yogaGirl-iStock.jpg');
+}
+
+#professional {
+    background-image: url('../images/businessWoman-iStock.jpg');
+    
+}
+
+#community {
+    background-image: url('../images/communityService-iStock.jpg');
+}
+
+#membership {
+    background-image: url('../images/membership-iStock.jpeg');
+}
+
+#fundraising {
+    background-image: url('../images/fundraising-iStock.jpeg');
+}
