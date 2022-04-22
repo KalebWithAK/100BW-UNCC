@@ -13,6 +13,7 @@ $(() => {
 function displayBio(member, div) {
     console.log(member)
     const card = $('<div>').attr('class', 'card');
+    card.append(member.img)
     card.append(`
         <h3>${ member.name }</h3>
     `);
