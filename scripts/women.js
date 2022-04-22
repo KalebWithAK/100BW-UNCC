@@ -1,21 +1,20 @@
-$(document).ready(() => {
-    //$('#container-eBoard').bxSlider();
+$(() => {
+    $.get('https://kalebwithak.github.io/100BW-UNCC/json/women.json', (data) => {
+        const { eBoard } = data
 
-    $.get('./json/women.json', (data) => {
-        const { eBoard } = JSON.parse(data);
+        for (let i = 0; i < eBoard.length; i++) {
+            eBoard[i].img = $(`<img src=${eBoard[i].image}/>`)
 
-        /*for (let i = 0; i < eBoard.length; i++) {
-            displayBio(eBoard[i], '#container-eBoard');
-        }*/
+            displayBio(eBoard[i], $('#container-eBoard'))
+        }
     });
 });
 
 function displayBio(member, div) {
+    console.log(member)
     const card = $('<div>').attr('class', 'card');
-    card.append(`
-        <img src="${ member.image }">
-        <h3>${ member.name }</h3>
-    `);
+    card.append(member.img)
+    card.append(`<h3>${ member.name }</h3>`);
 
     $(div).append(card);
 }

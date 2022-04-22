@@ -1,12 +1,12 @@
 const upcoming = [];
 const past = [];
 
-$(document).ready(() => {
+$(() => {
     $('main').tabs();
 
     // request all events
-    /*$.get('./json/events.json', (data) => {
-        const events = JSON.parse(data);
+    $.get('https://kalebwithak.github.io/100BW-UNCC/json/events.json', (data) => {
+        const events = data;
 
         sortEvents(events);
 
@@ -23,7 +23,7 @@ $(document).ready(() => {
         if (past.length === 0) {
             $('#past-events').html('<p>No past events</p>');
         }        
-    });*/
+    });
 });
 
 // sort events between upcoming and past events

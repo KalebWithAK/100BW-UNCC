@@ -3,10 +3,11 @@
     grid-template-columns: 1fr 1fr;
 }*/
 
-.card-container {
+
+#upcoming-events, #past-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0.25em;
+    gap: 1rem;
 }
 
 .card {
